@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNTMenu JS</title>
+  <!-- <link rel="stylesheet" href="./themes/default.css" /> -->
+  <link rel="stylesheet" href="./themes/figma.css" /> 
+  <!--<link rel="stylesheet" href="./themes/windows-10.css" /> -->
+</head>
+<body>
+  <script src="./CNTMenu.js"></script>
+  <script defer>
+    const windows10 = new CNTMenu({
+      RTL: false,
+      dark: true,
+      target: "html",
+      items: [
+        { label: "Toolbars", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Search", cb() {}, isLine: false },
+        { label: "News and interests", cb() {}, isLine: false },
+        { label: "Show Cortana button", cb() {}, isLine: false },
+        { label: "Show Task View button", cb() {}, isLine: false },
+        { label: "Show People on the taskbar", cb() {}, isLine: false },
+        { label: "Show Windows Ink Workspace button", cb() {}, isLine: false },
+        { label: "Show touch keyboard button", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Cascade windows", cb() {}, isLine: false },
+        { label: "Show windows stacked", cb() {}, isLine: false },
+        { label: "Show windows side by side", cb() {}, isLine: false },
+        { label: "Show the desktop", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Task Manager", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Lock the taskbar", cb() {}, isLine: false },
+        { label: "Taskbar settings", cb() {}, isLine: false },
+      ],
+    })
+    const figma = new CNTMenu({
+      RTL: false,
+      dark: false,
+      target: "html",
+      items: [
+        { label: "Open", cb() {}, isLine: false },
+        { label: "Open in new tab", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Add to your favorites", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Copy link", cb() {}, isLine: false },
+        { label: "Share", cb() {}, isLine: false },
+        { label: "Duplicate", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Remove from recent", cb() {}, isLine: false },
+      ]
+    })
+    const def = new CNTMenu({
+      RTL: false,
+      dark: true,
+      target: "html",
+      items: [
+        { label: "Open", cb() {}, isLine: false },
+        { label: "Open in new tab", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Add to your favorites", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Copy link", cb() {}, isLine: false },
+        { label: "Share", cb() {}, isLine: false },
+        { label: "Duplicate", cb() {}, isLine: false },
+        { label: "---", cb() {}, isLine: true },
+        { label: "Remove from recent", cb() {}, isLine: false },
+      ]
+    })
+    figma.run()
+  </script>
+</body>
+</html>
